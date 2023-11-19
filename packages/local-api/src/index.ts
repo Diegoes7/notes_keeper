@@ -23,13 +23,9 @@ export const serve = (
 		)
 	} else {
 		const packagePath = path.resolve(
-			'@notes_keeper/local-client/build'
+			'@notes_keeper/local-client/build/index.html'
 		)
-		app.use(express.static(packagePath))
-
-		app.get('*', (req, res) => {
-			res.sendFile(path.join(packagePath, 'index.html'));
-		});
+		app.use(express.static(path.dirname(packagePath)))
 	}
 
 	return new Promise<void>((resolve, reject) => {
