@@ -1,27 +1,11 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import { BrowserRouter as Router } from 'react-router-dom'
-
-// import CellList from './components/cell-list/cell-list'
-// import Navbar from './components/navbar/navbar'
-
-// ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-// 	<React.StrictMode>
-// 		<App />
-// 	</React.StrictMode>
-// )
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Routes } from './routes'
-import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<Routes />
-		</BrowserRouter>
+		<Routes />
 	</React.StrictMode>
 )
 

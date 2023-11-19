@@ -22,7 +22,7 @@ export const serve = (
 			})
 		)
 	} else {
-		const packagePath = path.resolve(
+		const packagePath = require.resolve(
 			'@notes_keeper/local-client/build/index.html'
 		)
 		app.use(express.static(path.dirname(packagePath)))

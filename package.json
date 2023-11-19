@@ -6,5 +6,8 @@
   },
   "scripts": {
     "start": "lerna run start --parallel"
+  },
+  "dependencies": {
+    "notes_keeper": "^5.0.0"
   }
 }
