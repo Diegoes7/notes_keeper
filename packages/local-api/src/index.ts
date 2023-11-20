@@ -25,7 +25,7 @@ export const serve = (
 		const packagePath = require.resolve(
 			'@notes_keeper/local-client/build/index.html'
 		)
-		app.use(express.static(path.dirname(packagePath)))
+		app.use('/', express.static(path.dirname(packagePath)))
 	}
 
 	return new Promise<void>((resolve, reject) => {
