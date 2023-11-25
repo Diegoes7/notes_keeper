@@ -26,6 +26,10 @@ export const serve = (
 			'@notes_keeper/local-client/build/index.html'
 		)
 		app.use('/', express.static(path.dirname(packagePath)))
+
+		app.get('*', (req, res) => {
+			res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+		})
 	}
 
 	return new Promise<void>((resolve, reject) => {
