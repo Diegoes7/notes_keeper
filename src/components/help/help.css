@@ -1,0 +1,38 @@
+.help-container {
+	margin: 0 0 1rem 0;
+	padding: 0 1rem;
+	overflow: auto;
+	color: white;
+	overflow: hidden;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: auto;
+	padding: 1rem;
+	width: 100%;
+}
+
+.paragraph {
+	margin: 0 0 0.75rem 0;
+	border: 0.2rem solid #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+	text-indent: 2em;
+}
+
+.title-help {
+	padding-bottom: 0.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.help-code-fields {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

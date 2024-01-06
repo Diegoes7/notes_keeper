@@ -1,0 +1,7 @@
+
+ [build]
+  functions = "functions"
+  publish = "public"
+
+#[[redirects]]
+#  /* /index.html 200

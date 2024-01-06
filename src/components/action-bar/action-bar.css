@@ -1,0 +1,15 @@
+.action-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.3;
+	transition: opacity 0.3s;
+}
+
+.reposition-btns {
+	padding: 0.12rem;
+}
+
+.action-bar:hover {
+	opacity: 1;
+}
