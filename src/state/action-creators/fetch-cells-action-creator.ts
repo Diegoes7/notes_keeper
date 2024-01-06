@@ -32,7 +32,7 @@ export const saveCells = () => {
 		const cells = order.map((id) => data[id]) //! iterate over id[] and on every id get a value in data
 
 		try {
-			// console.log('Saving cells:', cells)
+			console.log('Saving cells:', cells)
 			// Save data to Firebase Firestore
 			await Promise.all(
 				cells.map(async (cell) => {
