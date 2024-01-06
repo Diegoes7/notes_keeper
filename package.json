@@ -50,6 +50,9 @@
 		"build": "react-scripts build",
 		"eject": "react-scripts eject"
 	},
+	"engines": {
+		"node": "14.x"
+	},
 	"eslintConfig": {
 		"extends": [
 			"react-app",
