@@ -1,6 +1,6 @@
   [build]
   command = "npm install --force npm run build"
-  publish = "build"
+  publish = "/build"
 
 #[[redirects]]
 #  /* /index.html 200
