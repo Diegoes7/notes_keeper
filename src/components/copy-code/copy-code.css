@@ -32,7 +32,10 @@
 .code-button {
 	cursor: pointer;
 	border-radius: 0.75rem;
-	padding: 0.5rem;
+	font-weight: bold;
+	padding: 0.75rem;
+	border: none;
+	background-color: rgb(219, 225, 211);
 }
 
 .code-button:hover {
