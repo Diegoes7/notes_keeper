@@ -3,5 +3,5 @@
   command = "npm install --force && CI=false npm run build"
   publish = "build/"
 
-#[[redirects]]
-#  /* /index.html 200
+ [[redirects]]
+   /* /index.html 200
