@@ -1,7 +1,19 @@
-  [build]
+[build]
   base ="/"
   command = "npm install --force && CI=false npm run build"
   publish = "build/"
 
- [[redirects]]
-   /* /index.html 200
+[[redirects]]
+  from = "/code/*"
+  to = "/code/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/text/*"
+  to = "/text/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/help/*"
+  to = "/help/:splat"
+  status = 200
