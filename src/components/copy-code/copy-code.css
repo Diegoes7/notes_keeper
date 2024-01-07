@@ -1,8 +1,7 @@
 .code-container {
 	display: flex;
 	flex-direction: column;
-	font-size: 1rem;
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 }
 
 .pre-styles {
@@ -17,7 +16,7 @@
 	font-weight: bold;
 	background-color: white;
 	height: 3rem;
-  width: 23rem;
+	width: 90%;
 }
 
 .code {
@@ -25,8 +24,9 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	font-weight: 600;
-	font-size: 1rem;
-  padding: 1rem;
+	font-size: 1.2rem;
+	padding: 1rem;
+	color: black;
 }
 
 .code-button {
@@ -45,15 +45,29 @@
 }
 
 @media screen and (max-width: 500px) {
-  .code-container {
-    padding-left:0.5rem ;
-    align-items: center;
-  }
-  .pre-styles {
-    width: 90%;
-    justify-content: center;
-    margin: 0;
-    font-size: 10px;
-    overflow: hidden;
-  }
+	.code-container {
+		padding-left: 0.5rem;
+		align-items: center;
+		margin-top: 1rem;
+	}
+	pre {
+		padding: 1rem 0.5rem !important;
+	}
+	.pre-styles {
+		justify-content: center;
+		margin: 0;
+		font-size: 0.5rem;
+		overflow: hidden;
+		gap: 0.5rem;
+		margin: 0.5rem 0 0.5rem 0;
+	}
+	.code {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.pre-styles {
+		width: 100%;
+	}
 }

@@ -16,7 +16,7 @@ interface CodeCellProps {
 const CodeCell: React.FC<CodeCellProps> = ({ cell: { id, content, date } }) => {
 	const { updateCell, createBundle } = useActions()
 	const bundle = useTypedSelector((state) => state.bundles[id])
-	const cumulativeCode = useCumulativeCode(id);
+	const cumulativeCode = useCumulativeCode(id)
 
 	useEffect(() => {
 		if (!bundle) {
@@ -38,13 +38,14 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell: { id, content, date } }) => {
 					height: 'calc(100% - 0.7rem)',
 					display: 'flex',
 					flexDirection: 'row',
+					width: '100%',
 				}}
 			>
 				<Resizable direction='horizontal'>
-					<CodeEditor
-						initialValue={content}
-						onChange={(value) => updateCell(id, value, date)}
-					/>
+						<CodeEditor
+							initialValue={content}
+							onChange={(value) => updateCell(id, value, date)}
+						/>
 				</Resizable>
 				<div className='progress-wrapper'>
 					{!bundle || bundle.loading ? (

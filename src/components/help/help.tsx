@@ -43,7 +43,7 @@ const Help = () => {
 				<h2 className='title-help'>Example of Code Editor</h2>
 				<CodeCell cell={exampleCodeCell} />
 			</section>
-			<section style={{ margin: '0 1.5rem' }}>
+			<section className='section'>
 				<h2 className='title-help'>Example of Text Editor</h2>
 				<h2 className='title-help'>Need to click on it to start typing</h2>
 				<TextEditor cell={exampleTextCell} />
