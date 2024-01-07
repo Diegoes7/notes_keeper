@@ -4,16 +4,7 @@
   publish = "build/"
 
 [[redirects]]
-  from = "/code/*"
-  to = "/code/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "/text/*"
-  to = "/text/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/help/*"
-  to = "/help/:splat"
-  status = 200
